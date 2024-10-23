@@ -29,11 +29,11 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <SectionHeading>My Skills</SectionHeading>
+      <ul className="grid grid-cols-2 md:grid-cols-4 gap-10 justify-center text-lg text-gray-300 hover:text-white">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="flex flex-col items-center hover:text-white transition duration-300"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -43,7 +43,8 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            <skill.icon className="text-4xl mb-2 hover:scale-110 transition duration-300" />
+            <span>{skill.name}</span>
           </motion.li>
         ))}
       </ul>
