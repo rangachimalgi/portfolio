@@ -64,6 +64,20 @@ export const projectsData = [
     imageUrl: corpcommentImg,
   },
   {
+    title: "Club Management Mobile App ",
+    description:
+    "A user-friendly platform for managing memberships, facility bookings, events, and employee operations. It offers automated renewals, online reservations, and real-time financial insights, streamlining club administration.",
+    tags: ["React Native", "Node Js", "Express Js","MongoDB", "Redux"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "Multi-Service Management System ",
+    description:
+    "The application features intuitive dashboards tailored for Users, Vendors, Drivers, and Admins, providing quick access to key functions like ride booking, product management, and analytics. Each role-specific interface ensures seamless navigation, real-time updates, and efficient task management.",
+    tags: ["React Native", "Node Js", "Express Js","MongoDB", "Redux"],
+    imageUrl: corpcommentImg,
+  },
+  {
     title: "E-Commerce",
     description:
     "Crafted a client-specific e-commerce site with an intuitive admin panel, streamlining the management of products and orders.",
