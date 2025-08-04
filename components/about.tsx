@@ -18,15 +18,15 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-  I graduated with a degree in <span className="font-medium">Information Science</span> and started my career as a software engineer at Customer XPS, where I worked for over a year. I later transitioned into freelancing, developing websites, desktop, and mobile applications. My passion for programming is deeply rooted in <span className="italic">problem-solving</span>. I <span className="underline">love</span> deciphering complex challenges and finding solutions. My primary technologies are <span className="font-medium">React, Node.js, and MongoDB</span>, and I am skilled in TypeScript, React Native and Figma. I'm currently seeking a <span className="font-medium">full-time position</span> as a software developer, eager to bring my diverse skills to a dynamic team.
+  <p className="mb-3">
+  I'm a fullstack engineer who’s shipped <span className="font-medium">7+ real-world projects</span> across healthtech, real estate, and events. I started my career in fintech at Customer XPS, then moved into freelancing, and now I’m building internal tools and dashboards at <span className="font-medium">Patientry AI</span>, a healthtech startup. I love working fast, keeping the UX clean, and figuring out messy problems with <span className="font-medium">React, Node.js, TypeScript</span>, and <span className="font-medium">React Native</span>. I'm currently open to a <span className="font-medium">full-time role</span> where I can bring real-world product experience and speed to a sharp engineering team.
 </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        Badminton, and Listening to Hip Hop{" "}
-        
-      </p>
+<p>
+  <span className="italic">When I'm not coding</span>, I’m probably on a badminton court or vibing to hip hop.
+</p>
+
+
     </motion.section>
   );
 }
