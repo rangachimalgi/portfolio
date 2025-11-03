@@ -52,14 +52,14 @@ export const links = [
 ] as const;
 export const experiencesData = [
   {
-    title: "Full Stack Developer – Customer XPS",
-    location: "Bengaluru, Karnataka",
+    title: "Frontend Engineer – Patientry AI",
+    location: "Remote",
     description:
-      "Started as a backend developer using Java + Spring Boot, then moved to frontend with React.js, working on internal fintech tools and dashboards.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+      "Building internal tools and dashboards for a healthcare AI startup. Shipped modular UI, integrated APIs, and handled key features for client-facing ops.",
+    icon: React.createElement(FaReact),
+    date: "2025 - present",
   },
-  {
+   {
     title: "Freelance Full-Stack Developer",
     location: "Remote",
     description:
@@ -68,6 +68,15 @@ export const experiencesData = [
     date: "2023 - present",
   },
   {
+    title: "Full Stack Developer – Customer XPS",
+    location: "Bengaluru, Karnataka",
+    description:
+      "Started as a backend developer using Java + Spring Boot, then moved to frontend with React.js, working on internal fintech tools and dashboards.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+ 
+  {
     title: "Full Stack Engineer – ParNets Group",
     location: "Bengaluru, Karnataka",
     description:
@@ -75,14 +84,7 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2024 - 2025",
   },
-  {
-    title: "Frontend Engineer – Patientry AI",
-    location: "Remote",
-    description:
-      "Building internal tools and dashboards for a healthcare AI startup. Shipped modular UI, integrated APIs, and handled key features for client-facing ops.",
-    icon: React.createElement(FaReact),
-    date: "2025 - present",
-  },
+  
 ] as const;
 
 
