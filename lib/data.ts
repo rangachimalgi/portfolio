@@ -69,6 +69,14 @@ export const experiencesData = [
     date: "2023 - present",
   },
   {
+    title: "Full-Stack Engineer (Contract)",
+    location: "Bengaluru, Karnataka",
+    description:
+      "Built and shipped mobile and web apps for SMEs using React Native, React.js, Node.js, and MongoDB. Owned end-to-end features, custom APIs, and client-facing delivery.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - 2025",
+  },
+  {
     title: "Full Stack Developer – Customer XPS",
     location: "Bengaluru, Karnataka",
     description:
@@ -76,16 +84,6 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
- 
-  {
-    title: "Full Stack Engineer – ParNets Group",
-    location: "Bengaluru, Karnataka",
-    description:
-      "Developed and deployed mobile/web apps for SMEs using React Native, React.js, Node.js, and MongoDB. Worked on end-to-end features, custom APIs, and direct client communication.",
-    icon: React.createElement(FaReact),
-    date: "2024 - 2025",
-  },
-  
 ] as const;
 
 export type Project = {
