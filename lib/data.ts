@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImageData } from "next/image";
 import { CgWorkAlt } from "react-icons/cg";
 import {
   FaReact,
@@ -55,15 +56,15 @@ export const experiencesData = [
     title: "Frontend Engineer – Patientry AI",
     location: "Remote",
     description:
-      "Building internal tools and dashboards for a healthcare AI startup. Shipped modular UI, integrated APIs, and handled key features for client-facing ops.",
+      "Built the React frontend for a healthcare management platform — patient, doctor, and appointment workflows across 20+ views, an analytics dashboard with Recharts and Leaflet, and a doctor consultation module with in-browser audio recording integrated with REST APIs for AI-generated visit summaries.",
     icon: React.createElement(FaReact),
     date: "2025 - present",
   },
-   {
-    title: "Freelance Full-Stack Developer",
+  {
+    title: "Independent Software Consultant",
     location: "Remote",
     description:
-      "Built and shipped multiple fullstack apps across healthcare, real estate, and events using React, React Native, Node.js, MongoDB, and TypeScript.",
+      "Consulted for businesses to design and ship full-stack products across healthcare, on-demand services, and retail — including Woosh, a car wash platform, and a fashion ecommerce and POS system.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
@@ -87,73 +88,90 @@ export const experiencesData = [
   
 ] as const;
 
+export type Project = {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  imageUrl: StaticImageData;
+  githubUrl?: string;
+  liveUrl?: string;
+};
 
 export const projectsData = [
   {
-    title: "Real Estate CRM App",
+    title: "Woosh — Car Wash Platform",
     description:
-      "Built a fullstack CRM mobile app for real estate teams with role-based access control (RBAC), lead tracking, attendance, and dynamic screen rendering based on user roles. Features clean UI, internal chat, and scalable backend APIs.",
-    tags: ["React Native", "Node Js", "Express Js", "MongoDB", "RBAC", "JWT"],
-    imageUrl: corpcommentImg,
-  },
-
-  {
-    title: "Blood Test Service Hub ",
-    description:
-      "Developed an online platform for a client to streamline blood test scheduling, management, and report delivery, including a comprehensive admin panel for operational oversight. Live: https://fortunebloodtest.com",
-    tags: ["React", "Node Js", "Express Js", "MongoDB", "Redux"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Club Management Mobile App ",
-    description:
-      "A user-friendly platform for managing memberships, facility bookings, events, and employee operations. It offers automated renewals, online reservations, and real-time financial insights, streamlining club administration.",
-    tags: ["React Native", "Node Js", "Express Js", "MongoDB", "Redux"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Multi-Service Management System ",
-    description:
-      "The application features intuitive dashboards tailored for Users, Vendors, Drivers, and Admins, providing quick access to key functions like ride booking, product management, and analytics. Each role-specific interface ensures seamless navigation, real-time updates, and efficient task management.",
-    tags: ["React Native", "Node Js", "Express Js", "MongoDB", "Redux"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "E-Commerce",
-    description:
-      "Crafted a client-specific e-commerce site with an intuitive admin panel, streamlining the management of products and orders.",
-    tags: ["React", "Node Js", "Express Js", "MongoDB", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Desktop App",
-    description:
-      "Developed a desktop application to efficiently manage an enterprise's internal database, enhancing their operational capabilities.",
+      "End-to-end platform for on-demand car and bike wash services — three apps on one shared backend. Customers book slots and pay via Razorpay, employees get assigned jobs with live tracking and attendance, and admins manage operations from a web dashboard. Built to handle the full service lifecycle, not just the booking flow.",
     tags: [
-      "Electron Js",
-      "React Js",
-      "Typescript",
+      "React Native",
+      "Expo",
+      "Node.js",
+      "Express",
       "MongoDB",
-      "Electron Builder",
-      "IPC",
+      "Razorpay",
+      "AWS S3",
+    ],
+    imageUrl: rmtdevImg,
+    githubUrl: "https://github.com/rangachimalgi/car-wash",
+  },
+  {
+    title: "Patientry — Healthcare Management Platform",
+    description:
+      "Built the frontend for a hospital management web app that lets clinicians manage patients, appointments, and doctors from a single dashboard. Delivered interactive analytics, CRUD flows for core entities, and a consultation workflow with in-browser audio recording that feeds AI-generated visit summaries via REST APIs.",
+    tags: [
+      "React",
+      "Vite",
+      "Recharts",
+      "Leaflet",
+      "Axios",
+      "Framer Motion",
     ],
     imageUrl: wordanalyticsImg,
   },
   {
-    title: "Mobile App",
+    title: "Fashion Ecommerce & POS",
     description:
-      "Developed a Mobile Application for a client to manage internal event handling for large venues and event spaces, facilitating smooth booking and organization processes.",
-    tags: ["React Native", "Typescript", "MongoDB"],
-    imageUrl: wordanalyticsImg,
+      "Building a fashion retail platform with a customer-facing ecommerce storefront and an in-store POS billing desk on a shared Next.js app. Product catalog with size/color variants, cart and checkout, plus counter sales with cash and UPI — all synced through Supabase. Customer mobile app in development.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind",
+      "Zustand",
+    ],
+    imageUrl: corpcommentImg,
+    githubUrl: "https://github.com/rangachimalgi/fashion-pos-ecom",
+  },
+  {
+    title: "Blood Test Service Hub",
+    description:
+      "Online platform for a client to streamline blood test scheduling, management, and report delivery, including a comprehensive admin panel for operational oversight.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
+    imageUrl: corpcommentImg,
+    liveUrl: "https://fortunebloodtest.com",
+  },
+  {
+    title: "Club Management Mobile App",
+    description:
+      "Platform for managing memberships, facility bookings, events, and employee operations with automated renewals, online reservations, and real-time financial insights.",
+    tags: ["React Native", "Node.js", "Express", "MongoDB", "Redux"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "Multi-Service Management System",
+    description:
+      "Multi-role app with dashboards for users, vendors, drivers, and admins — ride booking, product management, analytics, and real-time updates across role-specific interfaces.",
+    tags: ["React Native", "Node.js", "Express", "MongoDB", "Redux"],
+    imageUrl: corpcommentImg,
   },
   {
     title: "Event Booking and Coordination Platform",
     description:
-      "Developed a website for a client to facilitate event bookings, providing a seamless platform for managing venue reservations and related services.",
-    tags: ["React", "Node Js", "Express Js", "MongoDB", "Redux"],
+      "Website for a client to facilitate event bookings with a seamless platform for managing venue reservations and related services.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+] satisfies readonly Project[];
 
 export const skillsData = [
   { name: "JavaScript", icon: SiJavascript },
