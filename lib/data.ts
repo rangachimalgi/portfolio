@@ -80,7 +80,7 @@ export const experiencesData = [
     title: "Full Stack Developer – Customer XPS",
     location: "Bengaluru, Karnataka",
     description:
-      "Started as a backend developer using Java + Spring Boot, then moved to frontend with React.js, working on internal fintech tools and dashboards.",
+      "First role in fintech. Built React UI screens for internal tools, fixed Java/Spring Boot search and backend bugs, and closed tickets across the stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
