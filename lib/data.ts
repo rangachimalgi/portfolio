@@ -150,27 +150,6 @@ export const projectsData = [
     imageUrl: corpcommentImg,
     liveUrl: "https://fortunebloodtest.com",
   },
-  {
-    title: "Club Management Mobile App",
-    description:
-      "Platform for managing memberships, facility bookings, events, and employee operations with automated renewals, online reservations, and real-time financial insights.",
-    tags: ["React Native", "Node.js", "Express", "MongoDB", "Redux"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Multi-Service Management System",
-    description:
-      "Multi-role app with dashboards for users, vendors, drivers, and admins — ride booking, product management, analytics, and real-time updates across role-specific interfaces.",
-    tags: ["React Native", "Node.js", "Express", "MongoDB", "Redux"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Event Booking and Coordination Platform",
-    description:
-      "Website for a client to facilitate event bookings with a seamless platform for managing venue reservations and related services.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
-    imageUrl: wordanalyticsImg,
-  },
 ] satisfies readonly Project[];
 
 export const skillsData = [

@@ -20,12 +20,6 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-      <p className="mt-6 text-center text-gray-600 dark:text-gray-400">
-        ...and many more! Feel free to check out my other projects on my{" "}
-        <a href="https://github.com/rangachimalgi" target="_blank" className="text-blue-600 dark:text-blue-400 underline">
-          GitHub
-        </a>.
-      </p>
 
     </section>
   );
